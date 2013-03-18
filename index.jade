@@ -1,0 +1,22 @@
+<?php include('perch/runtime.php'); ?>
+!!!5
+html(lang='en')
+  head
+    title <?php perch_pages_title(); ?>
+    //- Basic needs
+    meta(charset='utf-8')
+    meta(name='designer', content='Patrik Affentranger')
+    <?php perch_content('SEO'); ?>
+    //- Mobile
+    meta(name='viewport', content='width=device-width, initual-scale=1, maximum-scale=1')
+
+    //- CSS
+    link(rel='stylesheet', type='text/css', href='css/styles.css')
+
+    //- Favicons
+    link(rel="shortcut icon", href="img/favicon.ico")
+    link(rel="apple-touch-icon", href="img/apple-touch-icon.png")
+    link(rel="apple-touch-icon", href="img/apple-touch-icon-72x72.png")
+    link(rel="apple-touch-icon", href="img/apple-touch-icon-114x114.png")
+  body
+    <?php perch_content('Intro'); ?>
