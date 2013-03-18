@@ -1,0 +1,14 @@
+/* TEAM */
+  Patrik Affentranger
+  Contact: hello [at] patrikaffentranger.me
+  Twitter: @pzimat
+  From: Berne, Switzerland
+
+/* THANKS */
+  Andrew Appleton (floatleft.com) for the perch-bootstrap inspiration
+
+/* SITE */
+  Last update: 18/03/2013
+  Language: English
+  Doctype: HTML5
+  IDE: Sublime Text 2, CodeKit, iTerm
