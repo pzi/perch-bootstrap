@@ -1,7 +1,7 @@
 !!!
 html(lang="en")
   head
-    title <?php perch_pages_title(); ?>
+    title <?php perch_pages_title(); ?> | <?php perch_content('Website Name'); ?>
     //- Basic needs
     meta(charset='utf-8')
     meta(name='designer', content='Patrik Affentranger')
@@ -27,5 +27,8 @@ html(lang="en")
 
     //- Modernizr
     script(type="text/javascript", src="js/lib/modernizr.min.js")
-  body
+  body(class="#{bodyClasses}")
+    // if lt IE 7
+      p.chromeframe
+        | Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.
     yield

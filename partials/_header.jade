@@ -1,0 +1,18 @@
+header
+  nav(role="navigation") .
+    <?php
+        perch_pages_navigation(array(
+            'from-path'            => '/',
+            'levels'               => 0,
+            'hide-extensions'      => true,
+            'hide-default-doc'     => true,
+            'flat'                 => false,
+            'template'             => 'item.html',
+            'include-parent'       => false,
+            'skip-template'        => false,
+            'siblings'             => false,
+            'only-expand-selected' => false,
+            'add-trailing-slash'   => true,
+            'navgroup'             => false
+        ));
+    ?>
