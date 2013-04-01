@@ -1,0 +1,39 @@
+<div class="vcard">
+  <h3>Contact <perch:content id="org" type="text" label="Business name" required="true" title="true" /></h3>
+  <span class="org vcard"><a class="url fn org" href="<perch:content id="org_url" type="text" label="Business Website URL" required="true" />"><perch:content id="org" /></a></span>
+  <perch:if exists="given_name" exists="family_name">
+    <div class="n">
+      <span class="given-name"><perch:content id="given_name" type="text" label="Given name" /></span>
+      <span class="family-name"><perch:content id="family_name" type="text" label="Family name" /></span>
+    </div>
+  </perch:if>
+  <div class="adr">
+    <p class="street-address"><perch:content id="street1" type="text" label="Address line 1" required="true" /></p>
+    <perch:if exists="street2">
+      <p class="street-address"><perch:content id="street2" type="text" label="Address line 2" /></p>
+    </perch:if>
+    <perch:if exists="locality">
+      <span class="locality"><perch:content id="locality" type="text" label="City/Suburb" required="true" /></span>
+    </perch:if>
+    <perch:if exists="state_abbreviation">
+      <abbr title="<perch:content id="state" type="text" label="State" required="true" />" class="region"><perch:content id="state_abbreviation" type="text" label="State (abbreviation)" help="If an abbreviation is entered, it will only show the abbreviation." /></abbr>
+      <perch:else />
+        <span class="region"><perch:content id="state" /></span>
+    </perch:if>
+    <perch:if exists="postcode">
+      <span class="postal-code"><perch:content id="postcode" type="text" label="Postal code" required="true" /></span>
+    </perch:if>
+    <perch:if exists="country">
+      <p class="country-name"><perch:content id="country" type="text" label="Country" /></p>
+    </perch:if>
+    <perch:if exists="email">
+      <p class="email"><a href="mailto:<perch:content id="email" type="text" label="Email address" />"><perch:content id="email" /></a></p>
+    </perch:if>
+    <perch:if exists="tel">
+      <p class="tel"><span class="type">work</span>: <perch:content id="tel" type="text" label="Telephone" /></p>
+    </perch:if>
+    <perch:if exists="fax">
+      <p class="tel"><span class="type">fax</span>: <perch:content id="fax" type="text" label="Fax" /></p>
+    </perch:if>
+  </div>
+</div>
