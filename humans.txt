@@ -8,7 +8,7 @@
   Andrew Appleton (floatleft.com) for the perch-bootstrap inspiration
 
 /* SITE */
-  Last update: 18/03/2013
+  Last update: 01/04/2013
   Language: English
   Doctype: HTML5
   IDE: Sublime Text 2, CodeKit, iTerm
