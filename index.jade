@@ -1,9 +1,10 @@
 <?php include('perch/runtime.php'); ?>
-include partials/meta
-  include partials/header
+bodyClasses = "home"
+include partials/_meta
+  include partials/_header
 
   section(role="main")
-    <?php perch_content('Intro'); ?>
+    h1 <?php perch_content('Page Title'); ?>
 
-  include partials/footer
-  include partials/scripts
+  include partials/_footer
+  include partials/_scripts
