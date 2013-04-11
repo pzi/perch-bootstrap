@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" href="img/apple-touch-icon-114x114.png">
     <script type="text/javascript" src="js/lib/modernizr.min.js"></script>
   </head>
-  <body class="home"><!--[if lt IE 7]>
+  <body class="home"><!--[if lte IE 7]>
     <p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
     <header>
       <nav role="navigation">
