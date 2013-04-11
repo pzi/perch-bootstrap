@@ -39,7 +39,7 @@
       <h1><?php perch_content('Page Title'); ?></h1>
     </section>
     <footer role="contentinfo">
-      <p>&copy;</p>
+      <p>&copy;</p><?php perch_content('Social Links'); ?>
     </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>!window.jQuery && document.write(unescape('%3Cscript src="/js/lib/jquery.1.9.1.min.js"%3E%3C/script%3E'));</script>
